@@ -1,0 +1,345 @@
+body {
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    font-weight: 100;
+    font-size: 12px;
+    line-height: 30px;
+    color: #777;
+    background: white;
+  }
+  #up a{
+      display: none;
+      max-width: 50px;
+      max-height: 50px;
+      height: 100%;
+      width: 100%;
+      position: fixed;  
+      text-align: center;
+      background-color: white;
+      color: black;
+      font-size: 2.2em;
+      text-decoration: none;
+      border-radius: 10%;
+      transition: ease-in-out .2s;
+  }
+  #up a:hover{
+    transform: scale(1.2);
+  }
+  #formCont{
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+  }
+  .animation-box {
+    width: 75%;
+    height: 27.5rem;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .animation-container {
+    width: 1000rem;
+    height: 30rem;
+  }
+  
+  @keyframes topFadeOut {
+    0% {
+      position: absolute;
+      top: -3rem;
+      opacity: 0;
+    }
+  
+    75% {
+      position: absolute;
+      top: 25%;
+      opacity: 1;
+    }
+  
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  @keyframes bottomFadeOut {
+    0% {
+      position: absolute;
+      bottom: -5rem;
+      opacity: 0;
+    }
+  
+    75% {
+      position: absolute;
+      bottom: 25%;
+      opacity: 1;
+    }
+  
+    100% {
+      opacity: 0;
+    }
+    
+  }
+  
+  @keyframes topFadeOutVertical {
+    0% {
+      position: absolute;
+      top: -3rem;
+      opacity: 0;
+    }
+  
+    75% {
+      position: absolute;
+      top: 45%;
+      opacity: 1;
+    }
+  
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  @keyframes rightFadeInOut {
+    0% {
+      position: absolute;
+      right: -3rem;
+      opacity: 0;
+    }
+  
+    75% {
+      position: absolute;
+      right: 10rem;
+      opacity: 1;
+    }
+  
+    100% {
+      opacity: 0;
+      right: 10rem;
+    }
+  }
+  
+  @keyframes fadeInOut {
+    0% {
+      opacity: 0;
+    }
+  
+    45% {
+      opacity: 1;
+    }
+  
+    100% {
+      opacity: 0%;
+    }
+  }
+  
+  .first-text {
+    font-size: 4.4rem;
+    position: absolute;
+    left: 2.5rem;
+    top: 5rem;
+    opacity: 0;
+    animation-name: topFadeOut;
+    animation-duration: 5s;
+    color: white;
+  }
+  
+  .second-text {
+    font-size: 3.4rem;
+    position: absolute;
+    top: 8.5rem;
+    opacity: 0;
+    animation-name: rightFadeInOut;
+    animation-delay: 3s;
+    animation-duration: 6s;
+    color: #ccc;
+  }
+  
+  .third-text {
+    transform: rotate(-90deg);
+    font-size: 2rem;
+    position: absolute;
+    left: 45%;
+    top: 45%;
+    opacity: 0;
+    animation-name: topFadeOutVertical;
+    animation-delay: 7.5s;
+    animation-duration: 6s;
+    color: #A3DDF0;
+    white-space: nowrap;
+  }
+  
+  .fourth-text {
+    font-size: 3.4rem;
+    position: absolute;
+    top: 10.5rem;
+    left: 10%;
+    opacity: 0;
+    color: #F0A3BE;
+    animation-name: fadeInOut;
+    animation-delay: 8.5s;
+    animation-duration: 9s;
+  }
+  
+  .fifth-text {
+    font-size: 5rem;
+    position: absolute;
+    left: 5%;
+    bottom: 25%;
+    opacity: 0;
+    color: #F0EBA3;
+    animation-name: bottomFadeOut;
+    animation-delay: 10s;
+    animation-duration: 9s;
+  }
+  #contact input[type="text"], input[type="email"],input[type="tel"], input[type="url"], textarea, button[type="submit"] {
+    font:  12px "Roboto", Helvetica, Arial, sans-serif;
+  }
+  
+  #contact {
+    background: #F9F9F9;
+    padding: 25px;
+    margin: 150px 0;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  }
+  
+  #contact h3 {
+    display: block;
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 10px;
+  }
+  
+  #contact h4 {
+    margin: 5px 0 15px;
+    display: block;
+    font-size: 13px;
+    font-weight: 400;
+  }
+  
+  fieldset {
+    border: 100px none !important;
+    margin: 0 0 10px;
+    min-width: 100%;
+    padding: 0;
+    width: 100%;
+  }
+  
+  #contact input[type="text"],input[type="email"], input[type="tel"],input[type="url"],textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    background: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+  }
+  
+  
+  #contact textarea {
+    height: 100px;
+    max-width: 100%;
+    resize: none;
+  }
+  
+  #contact [type="submit"] {
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    background: #000000;
+    color: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+    font-size: 15px;
+  }
+  
+  #contact[type="submit"]:active {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  }
+  
+
+  
+  #contact input:focus,  #contact textarea:focus {
+    outline: 0;
+    border: 1px solid #aaa;
+  }
+  
+  footer{
+    width:100%;
+    background:#202020;
+    color:white;
+   
+  }
+  .container-footer-all{
+    margin:auto;
+    width:100%;
+    max-width: 1200px;
+    padding:40px;
+  }
+  .container-body{
+    display:flex;
+    justify-content: space-between;
+  }
+  .column1{
+    max-width:400px;
+  }
+  .column1 h1{
+     font-size:22px;
+  }
+  .column1 p{
+   font-size: 17px; 
+   color:#C7C7C7;
+   margin-top:20px;     
+  }
+  
+  .column2{
+    max-width: 400px;
+  }
+  .column2 h1{
+    font-size: 22px;
+  }
+   .row{
+    margin-top:20px;
+    display:flex;
+  }
+  .row img{
+    width:36px;
+    height:36px;
+    transition:all 300ms;
+  }
+  .row img:hover{
+    transition:all 300ms;
+    transform: scale(1.2);
+    
+  }
+  
+  .row label{
+    margin-top:10px;
+    margin-left:20px;
+    color:#C7C7C7;
+  }
+  .column3{
+    max-width: 400px;
+  }
+  
+  .column3 h1{
+    font-size:22px;
+  }
+  .row2{
+    margin-top:20px;
+  }
+  .row2 img{
+    width:36px;
+    height:36px;
+  }
+  .row2 label{
+    margin-left:20px;
+    max-width: 150px;
+  
+  }
+  .container-footer{
+    max-width: 100%;
+    background:#101010;
+    padding:20px;
+    text-align: center;
+  }
+  .copyright{
+    color:#C7C7C7;
+  
+  }

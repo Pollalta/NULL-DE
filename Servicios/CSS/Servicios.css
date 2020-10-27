@@ -1,0 +1,363 @@
+
+
+body{
+	margin:0;
+	padding:0;
+	width: 100%;
+}
+article{
+	width: 80%;
+	height: 200px;
+	margin-left: 2%;
+}
+
+#Parte1{
+	width: 250px;
+	height: 250px;
+	border-radius: 300px;
+	border: 10px solid #ecf0f1;
+	background-image: url(../IMG/null.jpg);
+	background-size: cover;
+    background-repeat: no-repeat;
+	margin-left: 42%;
+	margin-bottom: 2.1%;
+
+}
+#Parte1:hover{
+  border: 10px solid black;
+  transition: 1s;
+}
+#Parte2{
+	width: 30%;
+	height: 100px;
+ 	margin-left: 30em;
+ 	margin-bottom: 5%;
+}
+ #Texto{
+	font-size:17px;
+	font-family: cursive;
+}
+#Parte3{
+	width: 70%;
+	height: 300px;
+	margin-left: 16%;
+  display: flex;
+  margin-bottom: 2%;
+}
+.Bloque{
+	width: 24%;
+	margin-left: 9%;
+	height: 300px;
+	font-family: cursive;
+}
+#Titulo1, #Titulo2, #Titulo3{
+	width: 100%;
+	height: 100px;
+}
+.Descripcion{
+	font-size: 16px;
+	width: 100%;
+	height: 200px;
+	 
+}
+
+ header {
+    width: 100%;
+    height: 600px;
+    background: #03a3c7;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(340, 95%, 50%, 0.459), hsla(317, 45%, 52%, 0.664)), url(../IMG/oficina.jpg);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(214, 72%, 37%, 0.459), hsla(221, 90%, 49%, 0.664)), url(../IMG/oficina6.jpg);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+nav{
+    text-align: right;
+    padding: 30px 50px 0 0;
+}
+
+nav > a{
+    color:#fff;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+nav > a:hover{
+    text-decoration: underline;
+}
+
+header .textos-header{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.textos-header h1{
+    font-size: 50px;
+    color:#fff;
+}
+
+.textos-header h2{
+    font-size: 30px;
+    font-weight: 300;
+    color:#fff;
+}
+
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer{
+    width:100%;
+    background:#202020;
+    color:white;
+   
+  }
+  .container-footer-all{
+    margin:auto;
+    width:100%;
+    max-width: 1200px;
+    padding:40px;
+  }
+  .container-body{
+    display:flex;
+    justify-content: space-between;
+  }
+  .column1{
+    max-width:400px;
+  }
+  .column1 h1{
+     font-size:22px;
+  }
+  .column1 p{
+   font-size: 17px; 
+   color:#C7C7C7;
+   margin-top:20px;     
+  }
+  
+  .column2{
+    max-width: 400px;
+  }
+  .column2 h1{
+    font-size: 22px;
+  }
+   .row{
+    margin-top:20px;
+    display:flex;
+  }
+  .row img{
+    width:36px;
+    height:36px;
+    transition:all 300ms;
+  }
+  .row img:hover{
+    transition:all 300ms;
+    transform: scale(1.2);
+    
+  }
+  
+  .row label{
+    margin-top:10px;
+    margin-left:20px;
+    color:#C7C7C7;
+  }
+  .column3{
+    max-width: 400px;
+  }
+  
+  .column3 h1{
+    font-size:22px;
+  }
+  .row2{
+    margin-top:20px;
+  }
+  .row2 img{
+    width:36px;
+    height:36px;
+  }
+  .row2 label{
+    margin-left:20px;
+    max-width: 150px;
+  
+  }
+  .container-footer{
+    max-width: 100%;
+    background:#101010;
+    padding:20px;
+    text-align: center;
+  }
+  .copyright{
+    color:#C7C7C7;
+  
+  }
+.animation-box {
+  width: 75%;
+  height: 27.5rem;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.animation-container {
+  width: 1000rem;
+  height: 30rem;
+}
+
+@keyframes topFadeOut {
+  0% {
+    position: absolute;
+    top: -3rem;
+    opacity: 0;
+  }
+
+  75% {
+    position: absolute;
+    top: 25%;
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes bottomFadeOut {
+  0% {
+    position: absolute;
+    bottom: -5rem;
+    opacity: 0;
+  }
+
+  75% {
+    position: absolute;
+    bottom: 25%;
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+  
+}
+
+@keyframes topFadeOutVertical {
+  0% {
+    position: absolute;
+    top: -3rem;
+    opacity: 0;
+  }
+
+  75% {
+    position: absolute;
+    top: 45%;
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes rightFadeInOut {
+  0% {
+    position: absolute;
+    right: -3rem;
+    opacity: 0;
+  }
+
+  75% {
+    position: absolute;
+    right: 10rem;
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    right: 10rem;
+  }
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+
+  45% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0%;
+  }
+}
+
+.first-text {
+  font-size: 4.4rem;
+  position: absolute;
+  left: 2.5rem;
+  top: 5rem;
+  opacity: 0;
+  animation-name: topFadeOut;
+  animation-duration: 5s;
+  color: white;
+}
+
+.second-text {
+  font-size: 3.4rem;
+  position: absolute;
+  top: 8.5rem;
+  opacity: 0;
+  animation-name: rightFadeInOut;
+  animation-delay: 3s;
+  animation-duration: 6s;
+  color: #ccc;
+}
+
+.third-text {
+  transform: rotate(-90deg);
+  font-size: 2rem;
+  position: absolute;
+  left: 45%;
+  top: 45%;
+  opacity: 0;
+  animation-name: topFadeOutVertical;
+  animation-delay: 7.5s;
+  animation-duration: 6s;
+  color: #A3DDF0;
+  white-space: nowrap;
+}
+
+.fourth-text {
+  font-size: 3.4rem;
+  position: absolute;
+  top: 10.5rem;
+  left: 10%;
+  opacity: 0;
+  color: #F0A3BE;
+  animation-name: fadeInOut;
+  animation-delay: 8.5s;
+  animation-duration: 9s;
+}
+
+.fifth-text {
+  font-size: 5rem;
+  position: absolute;
+  left: 5%;
+  bottom: 25%;
+  opacity: 0;
+  color: #F0EBA3;
+  animation-name: bottomFadeOut;
+  animation-delay: 10s;
+  animation-duration: 9s;
+}
