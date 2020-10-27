@@ -250,6 +250,7 @@ header .textos-header{
     display: flex;
     height: 430px;
     width: 100%;
+    font-size: 1.2em;
     align-items: center;
     justify-content: center;
     flex-direction: column;
