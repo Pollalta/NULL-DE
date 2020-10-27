@@ -226,6 +226,7 @@
     background: linear-gradient(to right, hsla(214, 72%, 37%, 0.459), hsla(221, 90%, 49%, 0.664)), url(../IMG/oficina6.jpg);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: cover;
+    font-size: 1.5em;
     background-attachment: fixed;
     position: relative;
 }
@@ -250,7 +251,6 @@ header .textos-header{
     display: flex;
     height: 430px;
     width: 100%;
-    font-size: 1.2em;
     align-items: center;
     justify-content: center;
     flex-direction: column;
